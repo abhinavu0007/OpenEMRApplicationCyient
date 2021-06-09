@@ -1,5 +1,7 @@
 package com.cyient.utilities;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 
 public class DataProviderUtils {
@@ -38,6 +40,13 @@ public class DataProviderUtils {
 		 main[1][2]= "German";
 		 main[1][3]="Invalid username or password";
 		 return main;
+	}
+	
+	public Object[][] validCredentialExcelData( ) throws IOException
+	{
+		
+		Object[][] main = ExcelUtils.getSheetIntoObjectArray("src/test/resources/testdata/OpenEMRData.xlsx","validCredantialTest" );
+		return main;
 	}
 
 }

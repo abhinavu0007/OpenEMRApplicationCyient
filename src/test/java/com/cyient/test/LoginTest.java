@@ -15,7 +15,7 @@ public class LoginTest  extends WebDriverWrapper{
 
 	
 	@Test(dataProvider = "invalidData", dataProviderClass = DataProviderUtils.class)
-	public void invalidCredantialTest() 
+	public void invalidCredantialTest(String username, String password,String language,String getText) 
 	{
 
 		LoginPage login = new  LoginPage(driver);
