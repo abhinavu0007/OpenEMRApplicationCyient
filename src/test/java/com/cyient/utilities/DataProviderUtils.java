@@ -42,10 +42,11 @@ public class DataProviderUtils {
 		 return main;
 	}
 	
+	@DataProvider
 	public Object[][] validCredentialExcelData( ) throws IOException
 	{
 		
-		Object[][] main = ExcelUtils.getSheetIntoObjectArray("src/test/resources/testdata/OpenEMRData.xlsx","validCredantialTest" );
+		Object[][] main = ExcelUtils.getSheetIntoObjectArray("src/test/resources/testdata/OpenEMRData.xlsx","validCredentialTest" );
 		return main;
 	}
 
